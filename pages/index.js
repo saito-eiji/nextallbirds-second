@@ -19,10 +19,12 @@ const cardImage = {
 export default function Home() {
   
   return (
-    <> 
+    <>
+      
       <Head>
         <title>next-allbirds</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="noindex" />
       </Head>
       <header className="fixed w-full bg-white z-50">
         <nav className="flex font-bold justify-between items-center max-w-screen-xl mx-auto my-0">
@@ -34,7 +36,7 @@ export default function Home() {
           <img width="150px" className="p-3 transform hover:scale-125 duration-100" src="/images/allbirds-logo.png"/>
           <ul className="flex">
             <Link href="/collection"><a><li className="p-5">素材について</li></a></Link>
-            <Link href="/colleciton"><a><li className="p-5">店舗について</li></a></Link>
+            <Link href="/collection"><a><li className="p-5">店舗について</li></a></Link>
           </ul>
         </nav>        
       </header>
